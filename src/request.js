@@ -5,7 +5,10 @@ const requests = {
   requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=3`,
   requestTrending: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=2`,
   requestTopRated: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=1`,
-  requestAction: `https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=action&page=1&include_adult=false`,
+  requestCompare: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=2`,
+  requestSpotlight: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=3`,
+  requestWatchAgain: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=5`,
+  requestRandom: `https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=4`,
 };
 
 export default requests;
